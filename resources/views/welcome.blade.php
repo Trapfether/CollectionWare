@@ -1,45 +1,36 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('App')
 
-        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@section('title')
+Main
+@endsection
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+@section('content')
+<div class="row fullHeight">
+<div class="col-xs-12 fullHeight noPadding">
+<div id="editor" class="fullHeight">function foo(items) {
+    var x = "All this is syntax highlighted";
+    return x;
+}</div>
+</div>
+</div>
+@endsection
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('footScripts')
+<script src="{{ asset('/files/ace-src/ace.js') }}" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+</script>
+<style type="text/css" media="screen">
+    .fullHeight{
+    	height: 100%;
+    }
+    .noPadding{
+    	padding: 0px;
+    }
+    .container-fluid{
+    	height: 100%;
+    }
+</style>
+@endsection
