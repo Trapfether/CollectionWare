@@ -6,13 +6,24 @@
     src: url({{ asset('/files/DevOnly/OpenSans-Regular.ttf') }});
 }*/
 
+/*all of these followig styles are common helper styles*/
+.fullHeight
+{
+    height: 100%;
+}
+
+.noPadding{
+    padding: 0px;
+}
+
+/*these following styles take care of uniforming the way that div elements are handled*/
 div{
     box-sizing: border-box;
 }
 
+/*these styles are common to every page*/
 body {
-    color: #797979;
-    background: #f1f2f7;
+    background: #3C3C3C;
     font-family: 'Open Sans', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -24,7 +35,7 @@ body {
 
 /*header styles*/
 #header-wrapper{
-    background-color: white;
+    background-color: #41A9CC;
     position: fixed;
     z-index: 100;
     top:0px;
@@ -36,15 +47,8 @@ body {
     padding: 10px;
 }
 
-#navToggle-wrapper{
-    margin-right: 10px;
-    float: left;
-}
-
-#navToggle{
-    text-decoration: none;
-    color: #2a3542;
-    cursor: pointer;
+#header-wrapper *{
+    color: white;
 }
 
 #logo-wrapper{
@@ -70,7 +74,6 @@ body {
 }
 
 #userArrow{
-    color: #d1d2d7;
     margin-left: 7px;
     margin-right: 10px;
 }
@@ -83,57 +86,15 @@ body {
     padding: 10px;
 }
 
-
-/*sidebar styles*/
-#sidebar-wrapper {
-    width: 210px;
-    top:50px;
-    bottom: 0px;
-    position: fixed;
-    background: #2a3542;
-    z-index: 50;
-    font-size: 13px;
-}
-
 .nav-wrapper{
     padding: 2px;
-}
-
-.cont{
-    padding: 8px;
-}
-
-.menuGlyph{
-    font-size: 16px;
-}
-
-.menuAction:hover .menuGlyph{
-    color: #ff0000;
-}
-
-.nav-wrapper a{
-    text-decoration: none;
-    color: #d1d2d7;
 }
 
 /*universal page styles*/
 #page-content-wrapper{
     position: absolute;
-    left: 210px;
+    left: 0px;
     top: 50px;
     right: 0px;
     bottom: 0px;
-}
-
-
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 700px) {
-
-    #sidebar-wrapper{
-        left: -210px;
-    }
-    #page-content-wrapper{
-        left: 0px;
-    }
 }

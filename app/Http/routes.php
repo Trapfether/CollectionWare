@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*Home Page*/
+Route::get('/', 'LandingController@index');
+
+/*Home Page*/
+Route::get('/home', 'LandingController@index');
+
+/*Home Page*/
+Route::get('/editor', 'LandingController@editor');

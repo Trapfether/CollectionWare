@@ -42,11 +42,8 @@
     <!-- header -->
     <div id="header-wrapper" class="row">
         <div class="col-lg-12">
-            <div id="navToggle-wrapper" aria-label="Toggle Navigation Menu">
-                <a id="navToggle"><span class="fa fa-bars"title="menu" aria-hidden="true"></span></a>
-            </div>
             <div id="logo-wrapper">
-                <a id="logo" href="/"><span class="dark-blue">Level</span> <span class="orange">Devil</span></a>
+                <a id="logo" href="/">CollectionWare</a>
             </div>
             <!-- right here check for the user having messages or alerts
             <div id="alert-wrapper">
@@ -121,25 +118,6 @@
         </div>
     </div>
     <!-- /header -->
-
-    <!-- sidebarNavigation -->
-    <div id="sidebar-wrapper">
-        <div class="nav-wrapper cont">
-            <div class="cont">
-                <a href="\" class="menuAction"><span class="fa fa-home menuGlyph"></span> Home</a>
-            </div>
-            <div class="cont">
-                <a href="\dashboard" class="menuAction"><span class="fa fa-dashboard menuGlyph"></span> Dash Board</a>
-            </div>
-            <div class="cont">
-                <a href = "\viewtankdata" class="menuAction"><span class="fa fa-pie-chart menuGlyph"></span> Extensive Tank Data</a>
-            </div>
-            <div class="cont">
-                <a href = "\assignpermissionsuser" class="menuAction"><span class="fa fa-group menuGlyph"></span> Assign Permissions</a>
-            </div>
-        </div>
-    </div>
-    <!-- /sidebarNavigation -->
 
     <!-- content -->
     <div id="page-content-wrapper">
